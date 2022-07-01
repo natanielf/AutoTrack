@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AutoTrack</string>
+    <string name="navigation_bar_home">Expenses</string>
 </resources>
