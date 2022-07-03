@@ -78,8 +78,8 @@ fun AutoTrackFloatingActionButton() {
 }
 
 @Composable
-fun AutoTrackNavigationBar(modifier: Modifier = Modifier) {
-    NavigationBar(modifier) {
+fun AutoTrackNavigationBar() {
+    NavigationBar {
         NavigationBarItem(
             icon = { Icon(Icons.Default.Home, contentDescription = null) },
             label = { Text("Expenses") },
@@ -93,4 +93,28 @@ fun AutoTrackNavigationBar(modifier: Modifier = Modifier) {
             onClick = { /*TODO*/ }
         )
     }
+}
+
+@Preview
+@Composable
+fun AutoTrackAlertDialog() {
+    AlertDialog(
+        onDismissRequest = { /*TODO*/ },
+        title = {
+            Text(text = "Create New Expense")
+        },
+        text = {
+            Text(text = "Add a new expense using the input fields below.")
+        },
+        confirmButton = {
+            TextButton(onClick = { /*TODO*/ }) {
+                Text(text = "Add")
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = { /*TODO*/ }) {
+                Text(text = "Cancel")
+            }
+        }
+    )
 }
